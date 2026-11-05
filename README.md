@@ -52,7 +52,6 @@ post_img = composite(post.map(lee_filter), aoi)
 - [ ] Otsu thresholding
 - [ ] Permanent water (JRC) and slope/HAND masks
 - [ ] Command-line interface and GeoTIFF export
-- [ ] Case studies: 2022 Sylhet flood (Bangladesh), July 2021 eastern Kentucky flood (USA)
 
 ## Data
 
