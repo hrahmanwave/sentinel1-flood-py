@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "s1flood"
+version = "0.0.1"
+description = "Flood inundation mapping from Sentinel-1 SAR with Google Earth Engine, in Python"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Md. Hasanur Rahman" }]
+dependencies = ["earthengine-api>=0.1.390"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+notebooks = ["geemap", "jupyter"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/s1flood"]
+
+[tool.ruff]
+line-length = 100
